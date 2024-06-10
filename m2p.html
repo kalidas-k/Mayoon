@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body { font-family: sans-serif; }
+#myButton { background-color: blue; color: white; padding: 10px 20px; border: none; cursor: pointer; }
+</style>
+</head>
+<body>
+  <button id="myButton">Click Me!</button>
+  <script>
+    const button = document.getElementById("myButton");
+    button.addEventListener("click", function() {
+      this.style.backgroundColor = this.style.backgroundColor === "blue" ? "green" : "blue";
+    });
+  </script>
+</body>
+</html>
